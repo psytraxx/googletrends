@@ -5,7 +5,7 @@ import (
 	"github.com/mmcdole/gofeed"
 )
 
-var baseURL = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=%s"
+const baseURL = "https://trends.google.com/trends/trendingsearches/daily/rss?geo=%s"
 
 func readGoogleTrends(country string) (result []string, err error) {
 	fp := gofeed.NewParser()
